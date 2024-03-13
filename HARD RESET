@@ -1,0 +1,33 @@
+import random
+
+class MagicalAppleDeviceReset:
+    def __init__(self, device_name):
+        self.device_name = device_name
+
+    def hard_reset(self):
+        reset_phrases = [
+            "Alakazam! Let the device reset begin!",
+            "Wingardium Leviosa! Prepare for a magical reset!",
+            "Avada Kedavra! Not really, just resetting your device!",
+            "Expecto Patronum! Watch as your device is restored to its former glory!",
+            "Expelliarmus! Your device's troubles will vanish with this reset!"
+        ]
+        return random.choice(reset_phrases)
+
+# Human-generated intro
+print("Welcome! I am Dumbledore, the Wizard of Apple Device Resets!")
+print("With my mystical powers, I can perform a hard reset on your Apple device with iOS 16 or higher.")
+
+# Instantiate the Magical Apple Device Reset
+dumbledore = MagicalAppleDeviceReset("Dumbledore")
+
+# Simulate initiating a hard reset
+print("\nTo perform a hard reset on your device, simply follow my instructions...")
+print("Ready? Let's begin!")
+
+# Summon a magical reset
+reset_incantation = dumbledore.hard_reset()
+
+# Output the magical incantation for reset
+print("\nAbracadabra! Hocus pocus! Here's the magical incantation for your device reset:")
+print(reset_incantation)
